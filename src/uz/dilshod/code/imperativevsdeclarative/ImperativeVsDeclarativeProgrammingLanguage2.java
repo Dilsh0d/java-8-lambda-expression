@@ -1,4 +1,4 @@
-package uz.dilshod.code.imperatevsdeclarative;
+package uz.dilshod.code.imperativevsdeclarative;
 
 import java.util.ArrayList;
 import java.util.Arrays;

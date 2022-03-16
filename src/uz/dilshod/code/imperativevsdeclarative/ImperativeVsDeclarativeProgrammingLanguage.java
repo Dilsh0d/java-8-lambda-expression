@@ -1,6 +1,5 @@
-package uz.dilshod.code.imperatevsdeclarative;
+package uz.dilshod.code.imperativevsdeclarative;
 
-import java.util.Arrays;
 import java.util.stream.IntStream;
 
 /**
