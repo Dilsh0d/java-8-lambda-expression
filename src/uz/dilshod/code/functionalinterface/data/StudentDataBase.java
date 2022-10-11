@@ -2,12 +2,17 @@ package uz.dilshod.code.functionalinterface.data;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Supplier;
 
 /**
  * @author Tadjiev Dilshod
  * @since 0.1.2
  */
 public class StudentDataBase {
+
+    public static Supplier<Student> studentSupplier = () -> {
+       return new Student("Adam",2,3.6, "male",10,Arrays.asList("swimming", "basketball","volleyball"));
+    };
 
     /**
      * Total of 6 students in the database.
