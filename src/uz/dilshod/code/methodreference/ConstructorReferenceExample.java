@@ -2,7 +2,6 @@ package uz.dilshod.code.methodreference;
 
 import uz.dilshod.code.functionalinterface.data.Student;
 
-import java.util.Arrays;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
