@@ -1,6 +1,5 @@
 package uz.dilshod.code.functionalinterface.function;
 
-import java.util.Arrays;
 import java.util.function.Function;
 
 /**
