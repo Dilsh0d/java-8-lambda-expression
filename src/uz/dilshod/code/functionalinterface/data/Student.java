@@ -14,7 +14,7 @@ public class Student {
     private double gpa;
     private String gender;
     private int noteBooks;
-    private Optional<Bike> bike;
+    private Optional<Bike> bike = Optional.empty();
     private List<String> activities = new ArrayList<>();
 
     public Student(String name, int gradeLevel, double gpa, String gender, int noteBooks, List<String> activities) {
@@ -101,6 +101,8 @@ public class Student {
                 ", gradeLevel=" + gradeLevel +
                 ", gpa=" + gpa +
                 ", gender='" + gender + '\'' +
+                ", noteBooks=" + noteBooks +
+                ", bike=" + bike +
                 ", activities=" + activities +
                 '}';
     }
