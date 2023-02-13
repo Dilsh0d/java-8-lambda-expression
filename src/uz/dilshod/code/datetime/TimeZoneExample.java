@@ -1,9 +1,6 @@
 package uz.dilshod.code.datetime;
 
-import java.time.Clock;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
+import java.time.*;
 
 /**
  * @author Tadjiev Dilshod
@@ -44,5 +41,23 @@ public class TimeZoneExample {
         LocalDateTime localDateTime =LocalDateTime.now(ZoneId.of("Poland"));
 
         System.out.println("Poland : "+localDateTime);
+
+        /**
+         * convert from LocalDateTime, Instant to ZonedLocalDate and Time
+         */
+
+        LocalDateTime localDateTime1 = LocalDateTime.now();
+        System.out.println("localDateTime1 : "+localDateTime1);
+
+        ZonedDateTime zonedDateTime1 = localDateTime1.atZone(ZoneId.of("Poland"));
+        System.out.println("zonedDateTime1 : "+zonedDateTime1);
+
+        ZonedDateTime zonedDateTime2 = Instant.now().atZone(ZoneId.of("America/Los_Angeles"));
+        System.out.println("zonedDateTime2 : "+zonedDateTime2);
+
+
+        OffsetDateTime offsetDateTime = localDateTime1.atOffset(ZoneOffset.ofHours(-6));
+        System.out.println("offsetDateTime : "+offsetDateTime);
+
     }
 }
